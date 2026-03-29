@@ -1,0 +1,39 @@
+{
+  "name": "stealth-scraper-playwright",
+  "version": "1.0.0",
+  "description": "Production-grade stealth web scraper using Patchright and Playwright with anti-detection techniques",
+  "author": "Muhammad Hammad Faisal <hammadfaisal178@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "homepage": "https://github.com/M-Hammad-Faisal/stealth-scraper-playwright",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/M-Hammad-Faisal/stealth-scraper-playwright.git"
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "scrape": "tsx src/index.ts",
+    "build": "tsc",
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "format:check": "prettier --check \"src/**/*.ts\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "patchright": "^1.58.2",
+    "playwright": "^1.58.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^25.5.0",
+    "eslint": "^10.1.0",
+    "prettier": "^3.8.1",
+    "tsx": "^4.19.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.57.2"
+  }
+}
