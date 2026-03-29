@@ -3,7 +3,7 @@ name: Stealth Scraper
 on:
   workflow_dispatch:
   push:
-    branches: [main]
+    branches: [master]
   schedule:
     - cron: '0 8 * * 1'
 

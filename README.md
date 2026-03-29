@@ -1,11 +1,11 @@
 # stealth-scraper-playwright
 
-![Node.js](https://img.shields.io/badge/Node.js-≥20-339933?logo=node.js&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.7-3178C6?logo=typescript&logoColor=white)
-![Playwright](https://img.shields.io/badge/Playwright-1.50-2EAD33?logo=playwright&logoColor=white)
-![Patchright](https://img.shields.io/badge/Patchright-1.50-blueviolet)
+![Node.js](https://img.shields.io/badge/Node.js-≥24-339933?logo=node.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?logo=typescript&logoColor=white)
+![Playwright](https://img.shields.io/badge/Playwright-1.58-2EAD33?logo=playwright&logoColor=white)
+![Patchright](https://img.shields.io/badge/Patchright-1.58-blueviolet)
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
-![CI](https://img.shields.io/github/actions/workflow/status/M-Hammad-Faisal/stealth-scraper-playwright/scrape.yml?label=CI&logo=githubactions&logoColor=white)
+![CI](https://img.shields.io/github/actions/workflow/status/M-Hammad-Faisal/stealth-scraper-playwright/scrape.yml?branch=master&label=CI&logo=githubactions&logoColor=white)
 
 A stealth web scraper that navigates anti-detection systems using Patchright's CDP-patched Chromium — extracting nested detail-page data from every book on [books.toscrape.com](https://books.toscrape.com).
 
@@ -206,7 +206,7 @@ stealth-scraper-playwright/
 
 The GitHub Actions workflow (`.github/workflows/scrape.yml`) runs on:
 
-- **Push to `main`** — every commit triggers a full pipeline run.
+- **Push to `master`** — every commit triggers a full pipeline run.
 - **Manual dispatch** — trigger from the Actions tab for on-demand scraping.
 - **Weekly schedule** — every Monday at 08:00 UTC for fresh dataset generation.
 
@@ -218,10 +218,10 @@ Pipeline steps in order: checkout → Node.js setup (from `.nvmrc`) → `npm ci`
 
 - **[Patchright](https://github.com/Kaliiiiiiiiii-Vinyzu/patchright)** — CDP-patched Chromium for deep stealth
 - **[Playwright](https://playwright.dev)** — Browser automation framework
-- **[TypeScript 5.7](https://www.typescriptlang.org)** — Strict typing, zero `any`
+- **[TypeScript 5.9](https://www.typescriptlang.org)** — Strict typing, zero `any`
 - **[ESLint 9](https://eslint.org)** — Flat config with type-checked rules
 - **[Prettier 3](https://prettier.io)** — Consistent code formatting
-- **[Node.js 20+](https://nodejs.org)** — Runtime
+- **[Node.js 24+](https://nodejs.org)** — Runtime
 - **[GitHub Actions](https://github.com/features/actions)** — CI/CD with scheduled runs and artifact storage
 
 ---
